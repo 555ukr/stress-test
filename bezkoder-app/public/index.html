@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+    fetch("http://localhost:6868/api/tutorials", {
+        method: "POST",
+        body: JSON.stringify({
+            title: "test",
+            description: "test description",
+            published: true}),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    });
+</script>
+
+<h1>Store data to server</h1>
+
+</body>
+</html>
